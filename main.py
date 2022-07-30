@@ -9,6 +9,7 @@
 '''
 
 from flask import Flask, json
+from flask_cors import CORS, cross_origin
 import time
 import requests
 
@@ -18,6 +19,7 @@ REQUEST_HEADER = {
 }
 
 app = Flask(__name__)
+CORS(app)
 
 # ----- Miscellaneous methods -----
 def create_timestamp(time):
@@ -69,7 +71,7 @@ def amazon_status():
                     the *end* time after response is received)
         }
     '''
-    return get_status("https://www.amazon.com")
+    return json.dumps(get_status("https://www.amazon.com"))
 
 
 @app.route('/v1/google-status')
@@ -83,7 +85,7 @@ def google_status():
                     the *end* time after response is received)
         }
     '''
-    return get_status("https://www.google.com")
+    return json.dumps(get_status("https://www.google.com"))
 
 
 @app.route('/v1/all-status')
@@ -107,6 +109,6 @@ def all_status():
         ]
     '''
     return json.dumps([
-        amazon_status(),
-        google_status()
+        get_status("https://www.amazon.com"),
+        get_status("https://www.google.com")
     ])

@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background: rgb(200,200,200);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.status-card {
+  background: rgb(150,100,100);
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 350px;
+  margin: 20px;
+  float: left;
+}
+
+.status-card-loading {
+  color: blue;
+}
+
+.status-card-error {
+  color: red;
+}
+
+.status-card h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.status-card p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.status-card-label {
+  font-weight: bold;
+}
