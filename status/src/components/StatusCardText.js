@@ -1,8 +1,9 @@
 function StatusCardText(props) {
 	return (
-		<p>
-			{props.label}: {props.text}
-		</p>
+		<div>
+			<span className="status-card-text-label">{props.label}:</span>
+			<span className="status-card-text-value">{props.text}</span>
+		</div>
 	);
 }
 

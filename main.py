@@ -108,6 +108,7 @@ def all_status():
         }
         ]
     '''
+
     return json.dumps([
         get_status("https://www.amazon.com"),
         get_status("https://www.google.com")

@@ -13,35 +13,63 @@ code {
     monospace;
 }
 
+.header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+}
+
 .status-card {
-  background: rgb(150,100,100);
+  /*background:  rgb(60,179,113); */
+  background: rgb(62,180,137);
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
-  width: 350px;
+  width: 25%;
   margin: 20px;
   float: left;
 }
 
+.status-card:hover {
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+}
+
 .status-card-loading {
-  color: blue;
+  color: white;
+  background: rgb(70,70,70);
 }
 
 .status-card-error {
-  color: red;
-}
-
-.status-card h1 {
-  font-size: 1.1em;
-  margin-bottom: 6px;
-}
-.status-card p {
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  color: black;
+  background: rgb(178,34,34);
 }
 
 .status-card-label {
   font-weight: bold;
+  color: rgb(192,192,192);
+  font-size: 20px;
+  background-color: rgb(38,67,72);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-card-contents {
+  text-align: left;
+  padding-bottom: 20px;
+}
+.status-card-text-label {
+  width: 30%;
+  float: left;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.status-card-text-value {
+  color: black;
 }
