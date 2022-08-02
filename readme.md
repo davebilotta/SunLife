@@ -4,7 +4,7 @@
 * Frontend code (React) is in status/src
 
 To install:
-1. pip install requirements.txt
+1. pip install -r requirements.txt
 2. npm install
 
 To run:
