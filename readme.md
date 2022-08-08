@@ -13,7 +13,7 @@ To run:
 
            export FLASK_APP=main (or 'set FLASK_APP=main' on Windows)
 
-           flask-run --port:80
+           flask run --port:80
     - This will run the Flask server on port 80
 
 2. Frontend:
